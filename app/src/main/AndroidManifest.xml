@@ -11,19 +11,24 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme_white">
-        <activity android:name=".splash_screen"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait">
+<!--        <activity android:name=".splash_screen"-->
+<!--            android:theme="@style/AppTheme.NoActionBar"-->
+<!--            android:screenOrientation="portrait">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <activity android:name=".MainActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme">
         </activity>
 
         <activity android:name=".UserProfile"

@@ -12,84 +12,78 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:textSize="18dp"
+            android:layout_marginBottom="20dp"
             android:text="Welcome to"
-            android:layout_marginBottom="20dp"></TextView>
+            android:textSize="18sp"
+            app:fontFamily="sans-serif-black"></TextView>
 
         <ImageView
             android:id="@+id/logo"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/sparks_logo"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/sparks_logo" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:textSize="16dp"
             android:layout_marginTop="5dp"
-            android:text="The Sparks Foundation"></TextView>
+            android:text="THE SPARKS FOUNDATION"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:fontFamily="monospace"></TextView>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_below="@id/sparks_logo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:layout_below="@id/sparks_logo"
+        android:layout_marginTop="194dp"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/fblogin_button"
             android:layout_width="200dp"
             android:layout_height="35dp"
-            android:paddingHorizontal="5dp"
             android:layout_gravity="center_horizontal|center_vertical"
-            android:gravity="center_horizontal|center_vertical"
-            android:drawableLeft="@drawable/fb_logo"
-            android:text="Login with Facebook"
-            android:textColor="#fff"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:textAllCaps="false"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/rounded_button"
+            android:drawableLeft="@drawable/fb_logo"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingHorizontal="5dp"
             android:paddingStart="6dp"
             android:paddingLeft="6dp"
-            android:layout_marginBottom="20dp"></Button>
+            android:text="Login with Facebook"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:textStyle="bold"></Button>
 
         <Button
             android:id="@+id/gmaillogin_button"
             android:layout_width="200dp"
             android:layout_height="35dp"
-            android:paddingHorizontal="5dp"
             android:layout_gravity="center_horizontal|center_vertical"
-            android:gravity="center_horizontal|center_vertical"
+            android:background="@drawable/gmail_background_button"
             android:drawableLeft="@drawable/search"
-            android:text="Sign In with Google"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingHorizontal="5dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:text="Login with Google"
+            android:textAllCaps="false"
             android:textColor="#808080"
             android:textSize="15sp"
-            android:textStyle="bold"
-            android:textAllCaps="false"
-            android:background="@drawable/gmail_background_button"
-            android:paddingStart="10dp"
-            android:paddingLeft="10dp"></Button>
-
-        <TextView
-            android:id="@+id/link_texts"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:gravity="center_horizontal"
-            android:textSize="10dp"
-            android:text="By clicking on login, you are accepting our privacy policy \nand terms &amp; conditions."></TextView>
+            android:textStyle="bold"></Button>
 
     </LinearLayout>
 
@@ -99,19 +93,5 @@
         android:orientation="horizontal"
         android:layout_alignParentBottom="true"
         android:gravity="center_horizontal"
-        android:layout_marginBottom="10dp">
-
-        <ImageView
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:src="@drawable/copyright"
-            android:layout_gravity="center_vertical|center_horizontal" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="10dp"
-            android:gravity="center_vertical"
-            android:text="2020 Mounika Ala for The Sparks Foundation"></TextView>
-    </LinearLayout>
+        android:layout_marginBottom="10dp"/>
 </RelativeLayout>

@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
             this.finish();
         }
 
-        TextView text_links = findViewById(R.id.link_texts);
+        //TextView text_links = findViewById(R.id.link_texts);
         String text = "By clicking on login, you are accepting our privacy policy \nand terms & conditions.";
         SpannableString ss = new SpannableString(text);
         ForegroundColorSpan fcs = new ForegroundColorSpan(Color.rgb(66,103,178));
@@ -95,8 +95,8 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
 
         ss.setSpan(clickableSpan,44,58,Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         ss.setSpan(clickableSpan1,64,82,Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-        text_links.setText(ss);
-        text_links.setMovementMethod(LinkMovementMethod.getInstance());
+        //text_links.setText(ss);
+        //text_links.setMovementMethod(LinkMovementMethod.getInstance());
 
         fb_loginButton = findViewById(R.id.fblogin_button);
         callbackManager = CallbackManager.Factory.create();
